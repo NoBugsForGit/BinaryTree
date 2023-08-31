@@ -19,7 +19,7 @@ class BinaryTree:
         self.count = count
         self.left = None
         self.right = None
-        self.layer = log(self.count, 2) + 1
+        self.layer = int(log(self.count, 2) )+ 1
 
     def insert_left(self, data):
         self.left = BinaryTree(data, self.count * 2, self)
